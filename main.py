@@ -1,19 +1,21 @@
+""" Cest le code.
+"""
 from math import sqrt
 
 #### Fonction secondaire
 
-
 def isprime(p):
-
-    # votre code ici
-
-    pass
-
-#### Fonction principale
+    """ C'est la fonction """
+    if p<=1:
+        return False
+    for i in range(2,int(sqrt(p))+1):
+        if p%i == 0:
+            return False
+    return True
 
 
 def main():
-
+    """autre fonction """
     # vos appels à la fonction secondaire ici
 
     for n in range(100):
